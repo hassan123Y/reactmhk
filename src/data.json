@@ -1,30 +1,98 @@
-[
-  {
-    "uniqueId": "1",
-    "course": "Développement Web",
-    "grade": 18,
-    "date": "2023-09-15",
-    "prof": "M. Dupont"
-  },
-  {
-    "uniqueId": "2",
-    "course": "Base de données",
-    "grade": 14,
-    "date": "2023-10-10",
-    "prof": "Mme. Martin"
-  },
-  {
-    "uniqueId": "3",
-    "course": "Design UI/UX",
-    "grade": 16.5,
-    "date": "2023-11-05",
-    "prof": "M. Style"
-  },
-  {
-    "uniqueId": "4",
-    "course": "Algorithmique",
-    "grade": 11,
-    "date": "2023-09-20",
-    "prof": "M. Logique"
-  }
-]
+{
+  "notes": [
+    {
+      "uniqueId": "1",
+      "course": "Développement Web",
+      "grade": 18,
+      "date": "2023-09-15",
+      "prof": "M. Dupont"
+    },
+    {
+      "uniqueId": "2",
+      "course": "Base de données",
+      "grade": 14,
+      "date": "2023-10-10",
+      "prof": "Mme. Martin"
+    },
+    {
+      "uniqueId": "3",
+      "course": "Design UI/UX",
+      "grade": 16.5,
+      "date": "2023-11-05",
+      "prof": "M. Style"
+    },
+    {
+      "uniqueId": "4",
+      "course": "Algorithmique",
+      "grade": 11,
+      "date": "2023-09-20",
+      "prof": "M. Logique"
+    },
+    {
+      "uniqueId": "5",
+      "course": "Anglais Technique",
+      "grade": 15,
+      "date": "2023-12-01",
+      "prof": "Mme. Smith"
+    }
+  ],
+  "etudiants": [
+    {
+      "id": "e1",
+      "nom": "Benali",
+      "prenom": "Amine",
+      "email": "amine.benali@example.com"
+    },
+    {
+      "id": "e2",
+      "nom": "Cohen",
+      "prenom": "Sarah",
+      "email": "sarah.cohen@example.com"
+    },
+    {
+      "id": "e3",
+      "nom": "Dubois",
+      "prenom": "Jean",
+      "email": "jean.dubois@example.com"
+    },
+    {
+      "id": "e4",
+      "nom": "El Mansouri",
+      "prenom": "Yassine",
+      "email": "yassine.elmansouri@example.com"
+    },
+    {
+      "id": "e5",
+      "nom": "Leroy",
+      "prenom": "Marie",
+      "email": "marie.leroy@example.com"
+    }
+  ],
+  "matieres": [
+    {
+      "id": "m1",
+      "nom": "Développement Web",
+      "coefficient": 4
+    },
+    {
+      "id": "m2",
+      "nom": "Base de données",
+      "coefficient": 3
+    },
+    {
+      "id": "m3",
+      "nom": "Design UI/UX",
+      "coefficient": 2
+    },
+    {
+      "id": "m4",
+      "nom": "Algorithmique",
+      "coefficient": 5
+    },
+    {
+      "id": "m5",
+      "nom": "Anglais Technique",
+      "coefficient": 2
+    }
+  ]
+}
