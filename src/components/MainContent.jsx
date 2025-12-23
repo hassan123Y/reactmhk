@@ -1,24 +1,30 @@
-// src/components/MainContent.jsx
+import notesData from '../data.json'; // 1. On importe les données
+import NoteDisplay from './NoteDisplay'; // 2. On importe le composant enfant
+
 function MainContent() {
-  // 1. On récupère la date actuelle en JavaScript (avant le return)
-  const date = new Date();
+  // --- Fonction pour trier aléatoirement ---
+  const getRandomNote = () => {
+    const randomIndex = Math.floor(Math.random() * notesData.length);
+    return notesData[randomIndex];
+  };
 
-  // 2. On formate les éléments demandés
-  // Astuce : toLocaleDateString permet d'avoir le format français facilement
-  const dateDuJour = date.toLocaleDateString("fr-FR", {
-    weekday: "long", // Lundi
-    year: "numeric", // 2023
-    month: "long",   // Octobre
-    day: "numeric",  // 23
-  });
+  // On exécute la fonction pour avoir une note
+  const randomNote = getRandomNote();
 
-  const heureActuelle = date.toLocaleTimeString("fr-FR");
-
-  // 3. On injecte les variables dans le JSX avec des accolades {}
+  // --- Affichage ---
+  // On passe les données via les attributs (props) : course, grade, prof
   return (
-    <main>
+    <main style={{ textAlign: 'center', padding: '20px' }}>
+      <h2>Détail d'une note (Aléatoire)</h2>
+      
+      <NoteDisplay 
+        course={randomNote.course}
+        grade={randomNote.grade}
+        prof={randomNote.prof}
+      />
+      
       <p>
-        Bonjour, on est le {dateDuJour} et il est {heureActuelle}
+        <small>Rechargez la page pour voir une autre note !</small>
       </p>
     </main>
   );

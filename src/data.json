@@ -1,0 +1,30 @@
+[
+  {
+    "uniqueId": "1",
+    "course": "Développement Web",
+    "grade": 18,
+    "date": "2023-09-15",
+    "prof": "M. Dupont"
+  },
+  {
+    "uniqueId": "2",
+    "course": "Base de données",
+    "grade": 14,
+    "date": "2023-10-10",
+    "prof": "Mme. Martin"
+  },
+  {
+    "uniqueId": "3",
+    "course": "Design UI/UX",
+    "grade": 16.5,
+    "date": "2023-11-05",
+    "prof": "M. Style"
+  },
+  {
+    "uniqueId": "4",
+    "course": "Algorithmique",
+    "grade": 11,
+    "date": "2023-09-20",
+    "prof": "M. Logique"
+  }
+]
